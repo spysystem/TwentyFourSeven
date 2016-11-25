@@ -2,27 +2,35 @@
 
 namespace TwentyFourSeven\AccountService;
 
+/**
+ * Class LinkModel
+ *
+ * @package TwentyFourSeven\AccountService
+ */
 class LinkModel
 {
 
     /**
-     * @var guid $LineId
+     * @var string $LineId
      */
     protected $LineId = null;
 
     /**
-     * @var guid $LinkId
+     * @var string $LinkId
      */
     protected $LinkId = null;
 
-    
-    public function __construct()
+
+	/**
+	 * LinkModel constructor.
+	 */
+	public function __construct()
     {
     
     }
 
     /**
-     * @return guid
+     * @return string
      */
     public function getLineId()
     {
@@ -30,7 +38,7 @@ class LinkModel
     }
 
     /**
-     * @param guid $LineId
+     * @param string $LineId
      * @return \TwentyFourSeven\AccountService\LinkModel
      */
     public function setLineId($LineId)
@@ -40,7 +48,7 @@ class LinkModel
     }
 
     /**
-     * @return guid
+     * @return string
      */
     public function getLinkId()
     {
@@ -48,7 +56,7 @@ class LinkModel
     }
 
     /**
-     * @param guid $LinkId
+     * @param string $LinkId
      * @return \TwentyFourSeven\AccountService\LinkModel
      */
     public function setLinkId($LinkId)

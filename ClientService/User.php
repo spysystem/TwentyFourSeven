@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\ClientService;
 
+/**
+ * Class User
+ *
+ * @package TwentyFourSeven\ClientService
+ */
 class User
 {
 
@@ -11,7 +16,7 @@ class User
     protected $ContactId = null;
 
     /**
-     * @var guid $Id
+     * @var string $Id
      */
     protected $Id = null;
 
@@ -25,8 +30,11 @@ class User
      */
     protected $EmployeeId = null;
 
-    
-    public function __construct()
+
+	/**
+	 * User constructor.
+	 */
+	public function __construct()
     {
     
     }
@@ -50,7 +58,7 @@ class User
     }
 
     /**
-     * @return guid
+     * @return string
      */
     public function getId()
     {
@@ -58,7 +66,7 @@ class User
     }
 
     /**
-     * @param guid $Id
+     * @param string $Id
      * @return \TwentyFourSeven\ClientService\User
      */
     public function setId($Id)

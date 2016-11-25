@@ -2,16 +2,21 @@
 
 namespace TwentyFourSeven\Authenticate;
 
+/**
+ * Class SetIdentityById
+ *
+ * @package TwentyFourSeven\Authenticate
+ */
 class SetIdentityById
 {
 
     /**
-     * @var guid $identityId
+     * @var string $identityId
      */
     protected $identityId = null;
 
     /**
-     * @param guid $identityId
+     * @param string $identityId
      */
     public function __construct($identityId)
     {
@@ -19,7 +24,7 @@ class SetIdentityById
     }
 
     /**
-     * @return guid
+     * @return string
      */
     public function getIdentityId()
     {
@@ -27,7 +32,7 @@ class SetIdentityById
     }
 
     /**
-     * @param guid $identityId
+     * @param string $identityId
      * @return \TwentyFourSeven\Authenticate\SetIdentityById
      */
     public function setIdentityId($identityId)

@@ -2,13 +2,21 @@
 
 namespace TwentyFourSeven\CompanyService;
 
-class CompanyService extends \SoapClient
+use TwentyFourSeven\SoapClient;
+
+/**
+ * Class CompanyService
+ *
+ * @package TwentyFourSeven\CompanyService
+ */
+class CompanyService extends SoapClient
 {
+	const	WSDLUrl			= 'https://api.24sevenoffice.com/CRM/Company/V001/CompanyService.asmx?WSDL';
 
     /**
-     * @var array $classmap The defined classes
+     * @var array $arrClassMap The defined classes
      */
-    private static $classmap = [
+    protected static $arrClassMap = [
       'DeleteRelations' => 'TwentyFourSeven\\CompanyService\\DeleteRelations',
       'ArrayOfRelation' => 'TwentyFourSeven\\CompanyService\\ArrayOfRelation',
       'Relation' => 'TwentyFourSeven\\CompanyService\\Relation',
@@ -57,26 +65,6 @@ class CompanyService extends \SoapClient
       'GetStatuses' => 'TwentyFourSeven\\CompanyService\\GetStatuses',
       'GetStatusesResponse' => 'TwentyFourSeven\\CompanyService\\GetStatusesResponse',
     ];
-
-    /**
-     * @param array $options A array of config values
-     * @param string $wsdl The wsdl file to use
-     */
-    public function __construct(array $options = [], $wsdl = null)
-    {
-      foreach (self::$classmap as $key => $value) {
-        if (!isset($options['classmap'][$key])) {
-          $options['classmap'][$key] = $value;
-        }
-      }
-      $options = array_merge([
-      'features' => 1,
-    ], $options);
-      if (!$wsdl) {
-        $wsdl = 'CompanyService.wsdl';
-      }
-      parent::__construct($wsdl, $options);
-    }
 
     /**
      * Deletes an array of relations and returns the ones where an delete error occured.

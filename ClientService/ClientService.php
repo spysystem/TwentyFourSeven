@@ -2,13 +2,21 @@
 
 namespace TwentyFourSeven\ClientService;
 
-class ClientService extends \SoapClient
+use TwentyFourSeven\SoapClient;
+
+/**
+ * Class ClientService
+ *
+ * @package TwentyFourSeven\ClientService
+ */
+class ClientService extends SoapClient
 {
+	const	WSDLUrl			= 'https://api.24sevenoffice.com/Client/V001/ClientService.asmx?WSDL';
 
     /**
-     * @var array $classmap The defined classes
+     * @var array $arrClassMap The defined classes
      */
-    private static $classmap = [
+    protected static $arrClassMap = [
       'GetUsers' => 'TwentyFourSeven\\ClientService\\GetUsers',
       'GetUsersResponse' => 'TwentyFourSeven\\ClientService\\GetUsersResponse',
       'ArrayOfUser' => 'TwentyFourSeven\\ClientService\\ArrayOfUser',
@@ -41,26 +49,6 @@ class ClientService extends \SoapClient
       'ArrayOfVatType' => 'TwentyFourSeven\\ClientService\\ArrayOfVatType',
       'VatType' => 'TwentyFourSeven\\ClientService\\VatType',
     ];
-
-    /**
-     * @param array $options A array of config values
-     * @param string $wsdl The wsdl file to use
-     */
-    public function __construct(array $options = [], $wsdl = null)
-    {
-      foreach (self::$classmap as $key => $value) {
-        if (!isset($options['classmap'][$key])) {
-          $options['classmap'][$key] = $value;
-        }
-      }
-      $options = array_merge([
-      'features' => 1,
-    ], $options);
-      if (!$wsdl) {
-        $wsdl = 'ClientService.wsdl';
-      }
-      parent::__construct($wsdl, $options);
-    }
 
     /**
      * Returns a list of users of the currently logged in client.

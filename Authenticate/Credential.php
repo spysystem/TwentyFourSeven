@@ -2,16 +2,21 @@
 
 namespace TwentyFourSeven\Authenticate;
 
+/**
+ * Class Credential
+ *
+ * @package TwentyFourSeven\Authenticate
+ */
 class Credential
 {
 
     /**
-     * @var guid $ApplicationId
+     * @var string $ApplicationId
      */
     protected $ApplicationId = null;
 
     /**
-     * @var guid $IdentityId
+     * @var string $IdentityId
      */
     protected $IdentityId = null;
 
@@ -25,16 +30,22 @@ class Credential
      */
     protected $Username = null;
 
-    /**
-     * @param guid $ApplicationId
-     */
-    public function __construct($ApplicationId)
+	/**
+	 * @param string $ApplicationId
+	 * @param string $Username
+	 * @param string $Password
+	 * @param string $IdentityId
+	 */
+    public function __construct($ApplicationId, $Username = null, $Password = null, $IdentityId	= null)
     {
-      $this->ApplicationId = $ApplicationId;
+		$this->ApplicationId	= $ApplicationId;
+		$this->Username			= $Username;
+		$this->Password			= $Password;
+		$this->IdentityId		= $IdentityId;
     }
 
     /**
-     * @return guid
+     * @return string
      */
     public function getApplicationId()
     {
@@ -42,7 +53,7 @@ class Credential
     }
 
     /**
-     * @param guid $ApplicationId
+     * @param string $ApplicationId
      * @return \TwentyFourSeven\Authenticate\Credential
      */
     public function setApplicationId($ApplicationId)
@@ -52,7 +63,7 @@ class Credential
     }
 
     /**
-     * @return guid
+     * @return string
      */
     public function getIdentityId()
     {
@@ -60,7 +71,7 @@ class Credential
     }
 
     /**
-     * @param guid $IdentityId
+     * @param string $IdentityId
      * @return \TwentyFourSeven\Authenticate\Credential
      */
     public function setIdentityId($IdentityId)

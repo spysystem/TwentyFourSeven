@@ -2,11 +2,16 @@
 
 namespace TwentyFourSeven\Authenticate;
 
+/**
+ * Class Passport
+ *
+ * @package TwentyFourSeven\Authenticate
+ */
 class Passport
 {
 
     /**
-     * @var guid $Id
+     * @var string $Id
      */
     protected $Id = null;
 
@@ -26,7 +31,7 @@ class Passport
     protected $SessionId = null;
 
     /**
-     * @param guid $Id
+     * @param string $Id
      */
     public function __construct($Id)
     {
@@ -34,7 +39,7 @@ class Passport
     }
 
     /**
-     * @return guid
+     * @return string
      */
     public function getId()
     {
@@ -42,7 +47,7 @@ class Passport
     }
 
     /**
-     * @param guid $Id
+     * @param string $Id
      * @return \TwentyFourSeven\Authenticate\Passport
      */
     public function setId($Id)

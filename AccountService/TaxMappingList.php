@@ -2,11 +2,16 @@
 
 namespace TwentyFourSeven\AccountService;
 
+/**
+ * Class TaxMappingList
+ *
+ * @package TwentyFourSeven\AccountService
+ */
 class TaxMappingList
 {
 
     /**
-     * @var guid $GroupId
+     * @var string $GroupId
      */
     protected $GroupId = null;
 
@@ -31,7 +36,7 @@ class TaxMappingList
     protected $elementList = null;
 
     /**
-     * @param guid $GroupId
+     * @param string $GroupId
      * @param boolean $IsTemplate
      */
     public function __construct($GroupId, $IsTemplate)
@@ -41,7 +46,7 @@ class TaxMappingList
     }
 
     /**
-     * @return guid
+     * @return string
      */
     public function getGroupId()
     {
@@ -49,7 +54,7 @@ class TaxMappingList
     }
 
     /**
-     * @param guid $GroupId
+     * @param string $GroupId
      * @return \TwentyFourSeven\AccountService\TaxMappingList
      */
     public function setGroupId($GroupId)

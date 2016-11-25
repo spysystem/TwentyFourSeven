@@ -2,11 +2,16 @@
 
 namespace TwentyFourSeven\Authenticate;
 
+/**
+ * Class Identity
+ *
+ * @package TwentyFourSeven\Authenticate
+ */
 class Identity
 {
 
     /**
-     * @var guid $Id
+     * @var string $Id
      */
     protected $Id = null;
 
@@ -46,7 +51,7 @@ class Identity
     protected $IsDisabled = null;
 
     /**
-     * @param guid $Id
+     * @param string $Id
      * @param boolean $IsCurrent
      * @param boolean $IsDefault
      * @param boolean $IsProtected
@@ -60,7 +65,7 @@ class Identity
     }
 
     /**
-     * @return guid
+     * @return string
      */
     public function getId()
     {
@@ -68,7 +73,7 @@ class Identity
     }
 
     /**
-     * @param guid $Id
+     * @param string $Id
      * @return \TwentyFourSeven\Authenticate\Identity
      */
     public function setId($Id)

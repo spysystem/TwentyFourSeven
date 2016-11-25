@@ -2,22 +2,27 @@
 
 namespace TwentyFourSeven\Authenticate;
 
+/**
+ * Class Token
+ *
+ * @package TwentyFourSeven\Authenticate
+ */
 class Token
 {
 
     /**
-     * @var guid $ApplicationId
+     * @var string $ApplicationId
      */
     protected $ApplicationId = null;
 
     /**
-     * @var guid $Id
+     * @var string $Id
      */
     protected $Id = null;
 
     /**
-     * @param guid $ApplicationId
-     * @param guid $Id
+     * @param string $ApplicationId
+     * @param string $Id
      */
     public function __construct($ApplicationId, $Id)
     {
@@ -26,7 +31,7 @@ class Token
     }
 
     /**
-     * @return guid
+     * @return string
      */
     public function getApplicationId()
     {
@@ -34,7 +39,7 @@ class Token
     }
 
     /**
-     * @param guid $ApplicationId
+     * @param string $ApplicationId
      * @return \TwentyFourSeven\Authenticate\Token
      */
     public function setApplicationId($ApplicationId)
@@ -44,7 +49,7 @@ class Token
     }
 
     /**
-     * @return guid
+     * @return string
      */
     public function getId()
     {
@@ -52,7 +57,7 @@ class Token
     }
 
     /**
-     * @param guid $Id
+     * @param string $Id
      * @return \TwentyFourSeven\Authenticate\Token
      */
     public function setId($Id)

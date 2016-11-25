@@ -2,11 +2,16 @@
 
 namespace TwentyFourSeven\AccountService;
 
+/**
+ * Class BundleList
+ *
+ * @package TwentyFourSeven\AccountService
+ */
 class BundleList
 {
 
     /**
-     * @var guid $TaxMappingGroup
+     * @var string $TaxMappingGroup
      */
     protected $TaxMappingGroup = null;
 
@@ -41,7 +46,7 @@ class BundleList
     protected $sysLog = null;
 
     /**
-     * @var guid $sysAsyncLogId
+     * @var string $sysAsyncLogId
      */
     protected $sysAsyncLogId = null;
 
@@ -51,11 +56,11 @@ class BundleList
     protected $sysAsyncLogDescription = null;
 
     /**
-     * @param guid $TaxMappingGroup
+     * @param string $TaxMappingGroup
      * @param int $SaveOption
      * @param int $DefaultCustomerId
      * @param LogType $sysLog
-     * @param guid $sysAsyncLogId
+     * @param string $sysAsyncLogId
      */
     public function __construct($TaxMappingGroup, $SaveOption, $DefaultCustomerId, $sysLog, $sysAsyncLogId)
     {
@@ -67,7 +72,7 @@ class BundleList
     }
 
     /**
-     * @return guid
+     * @return string
      */
     public function getTaxMappingGroup()
     {
@@ -75,7 +80,7 @@ class BundleList
     }
 
     /**
-     * @param guid $TaxMappingGroup
+     * @param string $TaxMappingGroup
      * @return \TwentyFourSeven\AccountService\BundleList
      */
     public function setTaxMappingGroup($TaxMappingGroup)
@@ -193,7 +198,7 @@ class BundleList
     }
 
     /**
-     * @return guid
+     * @return string
      */
     public function getSysAsyncLogId()
     {
@@ -201,7 +206,7 @@ class BundleList
     }
 
     /**
-     * @param guid $sysAsyncLogId
+     * @param string $sysAsyncLogId
      * @return \TwentyFourSeven\AccountService\BundleList
      */
     public function setSysAsyncLogId($sysAsyncLogId)

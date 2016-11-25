@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\AccountService;
 
+/**
+ * Class Entry
+ *
+ * @package TwentyFourSeven\AccountService
+ */
 class Entry
 {
 
@@ -91,7 +96,7 @@ class Entry
     protected $BankAccountNo = null;
 
     /**
-     * @var guid $LinkId
+     * @var string $LinkId
      */
     protected $LinkId = null;
 
@@ -165,7 +170,7 @@ class Entry
     }
 
     /**
-     * @return \DateTime
+     * @return \DateTime|null|bool
      */
     public function getDate()
     {
@@ -191,7 +196,7 @@ class Entry
     }
 
     /**
-     * @return \DateTime
+     * @return \DateTime|null|bool
      */
     public function getDueDate()
     {
@@ -451,7 +456,7 @@ class Entry
     }
 
     /**
-     * @return guid
+     * @return string
      */
     public function getLinkId()
     {
@@ -459,7 +464,7 @@ class Entry
     }
 
     /**
-     * @param guid $LinkId
+     * @param string $LinkId
      * @return \TwentyFourSeven\AccountService\Entry
      */
     public function setLinkId($LinkId)
