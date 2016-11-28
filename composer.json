@@ -7,10 +7,11 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"TwentyFourSeven\\Authenticate\\": "Authenticate",
-			"TwentyFourSeven\\ClientService\\": "ClientService",
-			"TwentyFourSeven\\CompanyService\\": "CompanyService",
-			"TwentyFourSeven\\AccountService\\": "AccountService"
+            "TwentyFourSeven\\": "src",
+			"TwentyFourSeven\\Authenticate\\": "src/Authenticate",
+			"TwentyFourSeven\\ClientService\\": "src/ClientService",
+			"TwentyFourSeven\\CompanyService\\": "src/CompanyService",
+			"TwentyFourSeven\\AccountService\\": "src/AccountService"
 		}
 	}
 }
