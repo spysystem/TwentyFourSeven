@@ -50,9 +50,9 @@ class SoapClient extends \SoapClient
 		}
 		foreach (static::$arrClassMap as $strKey => $mValue)
 		{
-			if (!isset($arrOptions['arrClassMap'][$strKey]))
+			if (!isset($arrOptions['classmap'][$strKey]))
 			{
-				$arrOptions['arrClassMap'][$strKey]	= $mValue;
+				$arrOptions['classmap'][$strKey]	= $mValue;
 			}
 		}
 
