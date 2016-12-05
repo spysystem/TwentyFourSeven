@@ -2,9 +2,15 @@
 
 namespace TwentyFourSeven\CompanyService;
 
+use ReflectionClass;
+
+/**
+ * Class GetCompanies
+ *
+ * @package TwentyFourSeven\CompanyService
+ */
 class GetCompanies
 {
-
     /**
      * @var CompanySearchParameters $searchParams
      */
@@ -15,15 +21,27 @@ class GetCompanies
      */
     protected $returnProperties = null;
 
-    /**
-     * @param CompanySearchParameters $searchParams
-     * @param ArrayOfString $returnProperties
-     */
-    public function __construct($searchParams, $returnProperties)
-    {
-      $this->searchParams = $searchParams;
-      $this->returnProperties = $returnProperties;
-    }
+	/**
+	 * @param CompanySearchParameters $oSearchParameters
+	 * @param ArrayOfString           $arrReturnParameters
+	 *
+	 * note: Can't add type to $arrReturnParameters, since it can receive both an ArrayOfString, a normal array and null
+	 */
+	public function __construct(CompanySearchParameters $oSearchParameters, $arrReturnParameters = null)
+	{
+		if ($arrReturnParameters === null)
+		{
+			$arrReturnParameters = [];
+			$oReflect            = new ReflectionClass(Company::class);
+
+			foreach ($oReflect->getProperties() as $oProperty)
+			{
+				$arrReturnParameters[] = $oProperty->getName();
+			}
+		}
+		$this->searchParams		= $oSearchParameters;
+		$this->returnProperties	= $arrReturnParameters;
+	}
 
     /**
      * @return CompanySearchParameters
