@@ -60,7 +60,7 @@ class Authenticate extends SoapClient
 	 */
 	protected function isValidSession(string $strSessionID) : bool
 	{
-		$this->__setCookie(self::API_CookieName, $strSessionID);
+		$this->__setCookie(static::API_CookieName, $strSessionID);
 		try
 		{
 			$bValid		= $this->HasSession(new HasSession())->getHasSessionResult();
@@ -76,13 +76,19 @@ class Authenticate extends SoapClient
 	 * @param string $strApplicationID
 	 * @param string $strUserName
 	 * @param string $strPassword
+	 * @param string $strSessionID
 	 *
 	 * @return string
 	 * @throws Exception
 	 */
-	public static function GetSessionID(string $strApplicationID, string $strUserName, string $strPassword) : string
+	public static function GetSessionID(string $strApplicationID, string $strUserName, string $strPassword, string $strSessionID = '') : string
 	{
-		$oAuthenticate		= new self(self::API_SoapOptions, self::WSDLUrl);
+		if ($strSessionID !== '')
+		{
+			static::$strSessionID	= $strSessionID;
+		}
+
+		$oAuthenticate		= new self(static::API_SoapOptions, static::WSDLUrl);
 
 		if (static::$strSessionID === '' || !$oAuthenticate->isValidSession(static::$strSessionID))
 		{
@@ -92,10 +98,10 @@ class Authenticate extends SoapClient
 				throw new Exception('Invalid Credentials');
 			}
 
-			self::$strSessionID		= $strSessionID;
+			static::$strSessionID		= $strSessionID;
 		}
 
-		return self::$strSessionID;
+		return static::$strSessionID;
 	}
 
     /**
