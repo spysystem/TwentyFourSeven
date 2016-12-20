@@ -474,7 +474,7 @@ class Company
     }
 
     /**
-     * @return CompanyType
+     * @return string
      */
     public function getType()
     {

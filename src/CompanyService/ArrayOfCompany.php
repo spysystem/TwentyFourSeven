@@ -24,6 +24,20 @@ class ArrayOfCompany implements \ArrayAccess, \Iterator, \Countable
     
     }
 
+	/**
+	 * @return array
+	 */
+	public function asIndexedArray()
+	{
+		$arrCompanies	= [];
+		foreach ($this as $oCompany)
+		{
+			$arrCompanies[$oCompany->getType().'::'.$oCompany->getName()]	= $oCompany;
+		}
+
+		return $arrCompanies;
+	}
+
     /**
      * @return Company[]
      */
