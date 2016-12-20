@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\CompanyService;
 
+/**
+ * Class Category
+ *
+ * @package TwentyFourSeven\CompanyService
+ */
 class Category
 {
 
@@ -25,8 +30,11 @@ class Category
      */
     protected $ShowCompany = null;
 
-    
-    public function __construct()
+
+	/**
+	 * Category constructor.
+	 */
+	public function __construct()
     {
     
     }

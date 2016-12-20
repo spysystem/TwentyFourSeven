@@ -2,11 +2,19 @@
 
 namespace TwentyFourSeven\ClientService;
 
+/**
+ * Class GetDepartmentList
+ *
+ * @package TwentyFourSeven\ClientService
+ */
 class GetDepartmentList
 {
 
-    
-    public function __construct()
+
+	/**
+	 * GetDepartmentList constructor.
+	 */
+	public function __construct()
     {
     
     }

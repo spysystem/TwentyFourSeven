@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\ClientService;
 
+/**
+ * Class VatType
+ *
+ * @package TwentyFourSeven\ClientService
+ */
 class VatType
 {
 

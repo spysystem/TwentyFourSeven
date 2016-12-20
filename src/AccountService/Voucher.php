@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\AccountService;
 
+/**
+ * Class Voucher
+ *
+ * @package TwentyFourSeven\AccountService
+ */
 class Voucher
 {
 

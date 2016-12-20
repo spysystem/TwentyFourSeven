@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\ClientService;
 
+/**
+ * Class ArrayOfDepartment
+ *
+ * @package TwentyFourSeven\ClientService
+ */
 class ArrayOfDepartment implements \ArrayAccess, \Iterator, \Countable
 {
 
@@ -10,8 +15,11 @@ class ArrayOfDepartment implements \ArrayAccess, \Iterator, \Countable
      */
     protected $Department = null;
 
-    
-    public function __construct()
+
+	/**
+	 * ArrayOfDepartment constructor.
+	 */
+	public function __construct()
     {
     
     }

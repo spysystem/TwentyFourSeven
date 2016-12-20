@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\CompanyService;
 
+/**
+ * Class KeyValuePair
+ *
+ * @package TwentyFourSeven\CompanyService
+ */
 class KeyValuePair
 {
 
@@ -15,8 +20,11 @@ class KeyValuePair
      */
     protected $Value = null;
 
-    
-    public function __construct()
+
+	/**
+	 * KeyValuePair constructor.
+	 */
+	public function __construct()
     {
     
     }

@@ -1,7 +1,10 @@
 <?php
 
 
- function autoload_892c1e29f1f44907b31b2cbcbce924bd($class)
+/**
+ * @param $class
+ */
+function autoload_892c1e29f1f44907b31b2cbcbce924bd($class)
 {
     $classes = array(
         'TwentyFourSeven\ClientService\ClientService' => __DIR__ . '/ClientService.php',
@@ -40,7 +43,8 @@
         'TwentyFourSeven\ClientService\VatType' => __DIR__ . '/VatType.php'
     );
     if (!empty($classes[$class])) {
-        include $classes[$class];
+		/** @noinspection PhpIncludeInspection */
+		include $classes[$class];
     };
 }
 

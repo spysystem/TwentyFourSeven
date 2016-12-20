@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\ClientService;
 
+/**
+ * Class Client
+ *
+ * @package TwentyFourSeven\ClientService
+ */
 class Client
 {
 

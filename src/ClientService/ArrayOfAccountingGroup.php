@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\ClientService;
 
+/**
+ * Class ArrayOfAccountingGroup
+ *
+ * @package TwentyFourSeven\ClientService
+ */
 class ArrayOfAccountingGroup implements \ArrayAccess, \Iterator, \Countable
 {
 
@@ -10,8 +15,11 @@ class ArrayOfAccountingGroup implements \ArrayAccess, \Iterator, \Countable
      */
     protected $AccountingGroup = null;
 
-    
-    public function __construct()
+
+	/**
+	 * ArrayOfAccountingGroup constructor.
+	 */
+	public function __construct()
     {
     
     }

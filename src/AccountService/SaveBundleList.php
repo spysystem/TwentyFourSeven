@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\AccountService;
 
+/**
+ * Class SaveBundleList
+ *
+ * @package TwentyFourSeven\AccountService
+ */
 class SaveBundleList
 {
 

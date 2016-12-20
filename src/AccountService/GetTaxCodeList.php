@@ -2,11 +2,19 @@
 
 namespace TwentyFourSeven\AccountService;
 
+/**
+ * Class GetTaxCodeList
+ *
+ * @package TwentyFourSeven\AccountService
+ */
 class GetTaxCodeList
 {
 
-    
-    public function __construct()
+
+	/**
+	 * GetTaxCodeList constructor.
+	 */
+	public function __construct()
     {
     
     }

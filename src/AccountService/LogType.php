@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\AccountService;
 
+/**
+ * Class LogType
+ *
+ * @package TwentyFourSeven\AccountService
+ */
 class LogType
 {
     const __default = 'none';

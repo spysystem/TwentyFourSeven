@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\CompanyService;
 
+/**
+ * Class Address
+ *
+ * @package TwentyFourSeven\CompanyService
+ */
 class Address
 {
 
@@ -40,8 +45,11 @@ class Address
      */
     protected $Country = null;
 
-    
-    public function __construct()
+
+	/**
+	 * Address constructor.
+	 */
+	public function __construct()
     {
     
     }

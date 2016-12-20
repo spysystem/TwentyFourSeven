@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\AccountService;
 
+/**
+ * Class AccountDataErrors
+ *
+ * @package TwentyFourSeven\AccountService
+ */
 class AccountDataErrors extends AccountData
 {
 

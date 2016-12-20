@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\ClientService;
 
+/**
+ * Class GetVatTypeListResponse
+ *
+ * @package TwentyFourSeven\ClientService
+ */
 class GetVatTypeListResponse
 {
 

@@ -2,11 +2,19 @@
 
 namespace TwentyFourSeven\ClientService;
 
+/**
+ * Class GetUsers
+ *
+ * @package TwentyFourSeven\ClientService
+ */
 class GetUsers
 {
 
-    
-    public function __construct()
+
+	/**
+	 * GetUsers constructor.
+	 */
+	public function __construct()
     {
     
     }

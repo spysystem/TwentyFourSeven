@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\CompanyService;
 
+/**
+ * Class ArrayOfInt
+ *
+ * @package TwentyFourSeven\CompanyService
+ */
 class ArrayOfInt implements \ArrayAccess, \Iterator, \Countable
 {
 
@@ -10,8 +15,11 @@ class ArrayOfInt implements \ArrayAccess, \Iterator, \Countable
      */
     protected $int = null;
 
-    
-    public function __construct()
+
+	/**
+	 * ArrayOfInt constructor.
+	 */
+	public function __construct()
     {
     
     }

@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\AccountService;
 
+/**
+ * Class GetEntryIdResponse
+ *
+ * @package TwentyFourSeven\AccountService
+ */
 class GetEntryIdResponse
 {
 

@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\AccountService;
 
+/**
+ * Class saveRespons
+ *
+ * @package TwentyFourSeven\AccountService
+ */
 class saveRespons
 {
 

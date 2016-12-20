@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\CompanyService;
 
+/**
+ * Class DistributionMethod
+ *
+ * @package TwentyFourSeven\CompanyService
+ */
 class DistributionMethod
 {
     const __default = 'Unchanged';

@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\CompanyService;
 
+/**
+ * Class Relation
+ *
+ * @package TwentyFourSeven\CompanyService
+ */
 class Relation
 {
 
@@ -50,8 +55,11 @@ class Relation
      */
     protected $Fax = null;
 
-    
-    public function __construct()
+
+	/**
+	 * Relation constructor.
+	 */
+	public function __construct()
     {
     
     }

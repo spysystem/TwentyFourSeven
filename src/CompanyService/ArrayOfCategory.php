@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\CompanyService;
 
+/**
+ * Class ArrayOfCategory
+ *
+ * @package TwentyFourSeven\CompanyService
+ */
 class ArrayOfCategory implements \ArrayAccess, \Iterator, \Countable
 {
 
@@ -10,8 +15,11 @@ class ArrayOfCategory implements \ArrayAccess, \Iterator, \Countable
      */
     protected $Category = null;
 
-    
-    public function __construct()
+
+	/**
+	 * ArrayOfCategory constructor.
+	 */
+	public function __construct()
     {
     
     }

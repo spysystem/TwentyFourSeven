@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\AccountService;
 
+/**
+ * Class ArrayOfTaxMappingList
+ *
+ * @package TwentyFourSeven\AccountService
+ */
 class ArrayOfTaxMappingList implements \ArrayAccess, \Iterator, \Countable
 {
 
@@ -10,8 +15,11 @@ class ArrayOfTaxMappingList implements \ArrayAccess, \Iterator, \Countable
      */
     protected $TaxMappingList = null;
 
-    
-    public function __construct()
+
+	/**
+	 * ArrayOfTaxMappingList constructor.
+	 */
+	public function __construct()
     {
     
     }

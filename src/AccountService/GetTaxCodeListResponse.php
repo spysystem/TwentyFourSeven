@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\AccountService;
 
+/**
+ * Class GetTaxCodeListResponse
+ *
+ * @package TwentyFourSeven\AccountService
+ */
 class GetTaxCodeListResponse
 {
 

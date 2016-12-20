@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\CompanyService;
 
+/**
+ * Class DeleteRelationsResponse
+ *
+ * @package TwentyFourSeven\CompanyService
+ */
 class DeleteRelationsResponse
 {
 

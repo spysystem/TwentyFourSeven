@@ -2,11 +2,19 @@
 
 namespace TwentyFourSeven\Authenticate;
 
+/**
+ * Class GetIdentity
+ *
+ * @package TwentyFourSeven\Authenticate
+ */
 class GetIdentity
 {
 
-    
-    public function __construct()
+
+	/**
+	 * GetIdentity constructor.
+	 */
+	public function __construct()
     {
     
     }

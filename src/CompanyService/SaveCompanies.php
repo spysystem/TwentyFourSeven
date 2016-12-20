@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\CompanyService;
 
+/**
+ * Class SaveCompanies
+ *
+ * @package TwentyFourSeven\CompanyService
+ */
 class SaveCompanies
 {
 

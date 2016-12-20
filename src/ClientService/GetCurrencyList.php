@@ -2,11 +2,19 @@
 
 namespace TwentyFourSeven\ClientService;
 
+/**
+ * Class GetCurrencyList
+ *
+ * @package TwentyFourSeven\ClientService
+ */
 class GetCurrencyList
 {
 
-    
-    public function __construct()
+
+	/**
+	 * GetCurrencyList constructor.
+	 */
+	public function __construct()
     {
     
     }

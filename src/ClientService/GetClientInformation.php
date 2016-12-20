@@ -2,11 +2,19 @@
 
 namespace TwentyFourSeven\ClientService;
 
+/**
+ * Class GetClientInformation
+ *
+ * @package TwentyFourSeven\ClientService
+ */
 class GetClientInformation
 {
 
-    
-    public function __construct()
+
+	/**
+	 * GetClientInformation constructor.
+	 */
+	public function __construct()
     {
     
     }

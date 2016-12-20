@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\Authenticate;
 
+/**
+ * Class ArrayOfServer
+ *
+ * @package TwentyFourSeven\Authenticate
+ */
 class ArrayOfServer implements \ArrayAccess, \Iterator, \Countable
 {
 
@@ -10,8 +15,11 @@ class ArrayOfServer implements \ArrayAccess, \Iterator, \Countable
      */
     protected $Server = null;
 
-    
-    public function __construct()
+
+	/**
+	 * ArrayOfServer constructor.
+	 */
+	public function __construct()
     {
     
     }

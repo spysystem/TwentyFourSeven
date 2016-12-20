@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\AccountService;
 
+/**
+ * Class ArrayOfVoucher
+ *
+ * @package TwentyFourSeven\AccountService
+ */
 class ArrayOfVoucher implements \ArrayAccess, \Iterator, \Countable
 {
 
@@ -10,8 +15,11 @@ class ArrayOfVoucher implements \ArrayAccess, \Iterator, \Countable
      */
     protected $Voucher = null;
 
-    
-    public function __construct()
+
+	/**
+	 * ArrayOfVoucher constructor.
+	 */
+	public function __construct()
     {
     
     }

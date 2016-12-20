@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\AccountService;
 
+/**
+ * Class ArrayOfBundle
+ *
+ * @package TwentyFourSeven\AccountService
+ */
 class ArrayOfBundle implements \ArrayAccess, \Iterator, \Countable
 {
 
@@ -10,8 +15,11 @@ class ArrayOfBundle implements \ArrayAccess, \Iterator, \Countable
      */
     protected $Bundle = null;
 
-    
-    public function __construct()
+
+	/**
+	 * ArrayOfBundle constructor.
+	 */
+	public function __construct()
     {
     
     }

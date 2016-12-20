@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\Authenticate;
 
+/**
+ * Class SetIdentityResponse
+ *
+ * @package TwentyFourSeven\Authenticate
+ */
 class SetIdentityResponse
 {
 

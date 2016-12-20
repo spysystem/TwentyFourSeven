@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\AccountService;
 
+/**
+ * Class ResponsType
+ *
+ * @package TwentyFourSeven\AccountService
+ */
 class ResponsType
 {
     const __default = 'OK';

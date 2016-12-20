@@ -2,11 +2,19 @@
 
 namespace TwentyFourSeven\AccountService;
 
+/**
+ * Class GetTaxMappingLists
+ *
+ * @package TwentyFourSeven\AccountService
+ */
 class GetTaxMappingLists
 {
 
-    
-    public function __construct()
+
+	/**
+	 * GetTaxMappingLists constructor.
+	 */
+	public function __construct()
     {
     
     }

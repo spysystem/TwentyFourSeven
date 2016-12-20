@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\CompanyService;
 
+/**
+ * Class PhoneNumber
+ *
+ * @package TwentyFourSeven\CompanyService
+ */
 class PhoneNumber
 {
 
@@ -15,8 +20,11 @@ class PhoneNumber
      */
     protected $Value = null;
 
-    
-    public function __construct()
+
+	/**
+	 * PhoneNumber constructor.
+	 */
+	public function __construct()
     {
     
     }

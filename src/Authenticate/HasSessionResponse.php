@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\Authenticate;
 
+/**
+ * Class HasSessionResponse
+ *
+ * @package TwentyFourSeven\Authenticate
+ */
 class HasSessionResponse
 {
 

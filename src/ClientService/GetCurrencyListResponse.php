@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\ClientService;
 
+/**
+ * Class GetCurrencyListResponse
+ *
+ * @package TwentyFourSeven\ClientService
+ */
 class GetCurrencyListResponse
 {
 

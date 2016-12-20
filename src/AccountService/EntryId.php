@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\AccountService;
 
+/**
+ * Class EntryId
+ *
+ * @package TwentyFourSeven\AccountService
+ */
 class EntryId
 {
 
@@ -33,7 +38,7 @@ class EntryId
     }
 
     /**
-     * @return \DateTime
+     * @return \DateTime|bool|null
      */
     public function getDate()
     {

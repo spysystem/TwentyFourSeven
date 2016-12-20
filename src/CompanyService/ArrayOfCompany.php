@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\CompanyService;
 
+/**
+ * Class ArrayOfCompany
+ *
+ * @package TwentyFourSeven\CompanyService
+ */
 class ArrayOfCompany implements \ArrayAccess, \Iterator, \Countable
 {
 
@@ -10,8 +15,11 @@ class ArrayOfCompany implements \ArrayAccess, \Iterator, \Countable
      */
     protected $Company = null;
 
-    
-    public function __construct()
+
+	/**
+	 * ArrayOfCompany constructor.
+	 */
+	public function __construct()
     {
     
     }

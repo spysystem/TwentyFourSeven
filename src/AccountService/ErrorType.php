@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\AccountService;
 
+/**
+ * Class ErrorType
+ *
+ * @package TwentyFourSeven\AccountService
+ */
 class ErrorType
 {
     const __default = 'OK';

@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\ClientService;
 
+/**
+ * Class ArrayOfCurrency
+ *
+ * @package TwentyFourSeven\ClientService
+ */
 class ArrayOfCurrency implements \ArrayAccess, \Iterator, \Countable
 {
 
@@ -10,8 +15,11 @@ class ArrayOfCurrency implements \ArrayAccess, \Iterator, \Countable
      */
     protected $Currency = null;
 
-    
-    public function __construct()
+
+	/**
+	 * ArrayOfCurrency constructor.
+	 */
+	public function __construct()
     {
     
     }

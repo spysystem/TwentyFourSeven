@@ -1,5 +1,4 @@
 <?php
-
 namespace TwentyFourSeven\CompanyService;
 
 use TwentyFourSeven\SoapClient;

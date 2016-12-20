@@ -2,11 +2,19 @@
 
 namespace TwentyFourSeven\AccountService;
 
+/**
+ * Class GetAccountList
+ *
+ * @package TwentyFourSeven\AccountService
+ */
 class GetAccountList
 {
 
-    
-    public function __construct()
+
+	/**
+	 * GetAccountList constructor.
+	 */
+	public function __construct()
     {
     
     }

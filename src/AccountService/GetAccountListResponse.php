@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\AccountService;
 
+/**
+ * Class GetAccountListResponse
+ *
+ * @package TwentyFourSeven\AccountService
+ */
 class GetAccountListResponse
 {
 

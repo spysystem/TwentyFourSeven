@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\ClientService;
 
+/**
+ * Class ArrayOfUser
+ *
+ * @package TwentyFourSeven\ClientService
+ */
 class ArrayOfUser implements \ArrayAccess, \Iterator, \Countable
 {
 
@@ -10,8 +15,11 @@ class ArrayOfUser implements \ArrayAccess, \Iterator, \Countable
      */
     protected $User = null;
 
-    
-    public function __construct()
+
+	/**
+	 * ArrayOfUser constructor.
+	 */
+	public function __construct()
     {
     
     }

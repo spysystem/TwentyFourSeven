@@ -2,11 +2,19 @@
 
 namespace TwentyFourSeven\CompanyService;
 
+/**
+ * Class GetCustomerCategoryTree
+ *
+ * @package TwentyFourSeven\CompanyService
+ */
 class GetCustomerCategoryTree
 {
 
-    
-    public function __construct()
+
+	/**
+	 * GetCustomerCategoryTree constructor.
+	 */
+	public function __construct()
     {
     
     }

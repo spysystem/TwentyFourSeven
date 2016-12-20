@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\CompanyService;
 
+/**
+ * Class CompanyMap
+ *
+ * @package TwentyFourSeven\CompanyService
+ */
 class CompanyMap
 {
 

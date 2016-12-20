@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\AccountService;
 
+/**
+ * Class CheckAccountNo
+ *
+ * @package TwentyFourSeven\AccountService
+ */
 class CheckAccountNo
 {
 

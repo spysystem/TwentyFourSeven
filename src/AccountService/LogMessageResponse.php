@@ -2,11 +2,19 @@
 
 namespace TwentyFourSeven\AccountService;
 
+/**
+ * Class LogMessageResponse
+ *
+ * @package TwentyFourSeven\AccountService
+ */
 class LogMessageResponse
 {
 
-    
-    public function __construct()
+
+	/**
+	 * LogMessageResponse constructor.
+	 */
+	public function __construct()
     {
     
     }

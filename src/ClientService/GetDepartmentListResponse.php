@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\ClientService;
 
+/**
+ * Class GetDepartmentListResponse
+ *
+ * @package TwentyFourSeven\ClientService
+ */
 class GetDepartmentListResponse
 {
 

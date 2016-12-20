@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\AccountService;
 
+/**
+ * Class LogMessage
+ *
+ * @package TwentyFourSeven\AccountService
+ */
 class LogMessage
 {
 

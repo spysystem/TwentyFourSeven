@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\ClientService;
 
+/**
+ * Class GetUsersResponse
+ *
+ * @package TwentyFourSeven\ClientService
+ */
 class GetUsersResponse
 {
 

@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\CompanyService;
 
+/**
+ * Class ArrayOfRelation
+ *
+ * @package TwentyFourSeven\CompanyService
+ */
 class ArrayOfRelation implements \ArrayAccess, \Iterator, \Countable
 {
 
@@ -10,8 +15,11 @@ class ArrayOfRelation implements \ArrayAccess, \Iterator, \Countable
      */
     protected $Relation = null;
 
-    
-    public function __construct()
+
+	/**
+	 * ArrayOfRelation constructor.
+	 */
+	public function __construct()
     {
     
     }

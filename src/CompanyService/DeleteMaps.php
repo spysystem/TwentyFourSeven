@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\CompanyService;
 
+/**
+ * Class DeleteMaps
+ *
+ * @package TwentyFourSeven\CompanyService
+ */
 class DeleteMaps
 {
 

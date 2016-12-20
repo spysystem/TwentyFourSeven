@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\AccountService;
 
+/**
+ * Class AccountData
+ *
+ * @package TwentyFourSeven\AccountService
+ */
 class AccountData
 {
 

@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\CompanyService;
 
+/**
+ * Class SaveCustomerCategoriesResponse
+ *
+ * @package TwentyFourSeven\CompanyService
+ */
 class SaveCustomerCategoriesResponse
 {
 

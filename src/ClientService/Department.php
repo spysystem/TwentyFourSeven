@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\ClientService;
 
+/**
+ * Class Department
+ *
+ * @package TwentyFourSeven\ClientService
+ */
 class Department
 {
 

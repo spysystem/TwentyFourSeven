@@ -1,7 +1,10 @@
 <?php
 
 
- function autoload_a2d7851b8730eaaa97df8e2ec5210572($class)
+/**
+ * @param $class
+ */
+function autoload_a2d7851b8730eaaa97df8e2ec5210572($class)
 {
     $classes = array(
         'TwentyFourSeven\AccountService\AccountService' => __DIR__ . '/AccountService.php',
@@ -50,7 +53,8 @@
         'TwentyFourSeven\AccountService\LogMessageResponse' => __DIR__ . '/LogMessageResponse.php'
     );
     if (!empty($classes[$class])) {
-        include $classes[$class];
+		/** @noinspection PhpIncludeInspection */
+		include $classes[$class];
     };
 }
 

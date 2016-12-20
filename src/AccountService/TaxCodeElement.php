@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\AccountService;
 
+/**
+ * Class TaxCodeElement
+ *
+ * @package TwentyFourSeven\AccountService
+ */
 class TaxCodeElement
 {
 

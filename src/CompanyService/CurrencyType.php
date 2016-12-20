@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\CompanyService;
 
+/**
+ * Class CurrencyType
+ *
+ * @package TwentyFourSeven\CompanyService
+ */
 class CurrencyType
 {
     const __default = 'LOCAL';

@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\AccountService;
 
+/**
+ * Class Authentication
+ *
+ * @package TwentyFourSeven\AccountService
+ */
 class Authentication
 {
 
@@ -15,8 +20,11 @@ class Authentication
      */
     protected $Password = null;
 
-    
-    public function __construct()
+
+	/**
+	 * Authentication constructor.
+	 */
+	public function __construct()
     {
     
     }

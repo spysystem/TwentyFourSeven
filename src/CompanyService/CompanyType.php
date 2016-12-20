@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\CompanyService;
 
+/**
+ * Class CompanyType
+ *
+ * @package TwentyFourSeven\CompanyService
+ */
 class CompanyType
 {
     const __default = 'None';

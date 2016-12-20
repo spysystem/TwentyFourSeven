@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\AccountService;
 
+/**
+ * Class ArrayOfAccountData
+ *
+ * @package TwentyFourSeven\AccountService
+ */
 class ArrayOfAccountData implements \ArrayAccess, \Iterator, \Countable
 {
 
@@ -10,8 +15,11 @@ class ArrayOfAccountData implements \ArrayAccess, \Iterator, \Countable
      */
     protected $AccountData = null;
 
-    
-    public function __construct()
+
+	/**
+	 * ArrayOfAccountData constructor.
+	 */
+	public function __construct()
     {
     
     }

@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\Authenticate;
 
+/**
+ * Class Client
+ *
+ * @package TwentyFourSeven\Authenticate
+ */
 class Client
 {
 

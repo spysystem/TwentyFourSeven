@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\CompanyService;
 
+/**
+ * Class GetCategoriesResponse
+ *
+ * @package TwentyFourSeven\CompanyService
+ */
 class GetCategoriesResponse
 {
 

@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\ClientService;
 
+/**
+ * Class ArrayOfFaxNumber
+ *
+ * @package TwentyFourSeven\ClientService
+ */
 class ArrayOfFaxNumber implements \ArrayAccess, \Iterator, \Countable
 {
 
@@ -10,8 +15,11 @@ class ArrayOfFaxNumber implements \ArrayAccess, \Iterator, \Countable
      */
     protected $FaxNumber = null;
 
-    
-    public function __construct()
+
+	/**
+	 * ArrayOfFaxNumber constructor.
+	 */
+	public function __construct()
     {
     
     }

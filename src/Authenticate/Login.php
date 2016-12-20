@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\Authenticate;
 
+/**
+ * Class Login
+ *
+ * @package TwentyFourSeven\Authenticate
+ */
 class Login
 {
 

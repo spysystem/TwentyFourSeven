@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\Authenticate;
 
+/**
+ * Class Server
+ *
+ * @package TwentyFourSeven\Authenticate
+ */
 class Server
 {
 

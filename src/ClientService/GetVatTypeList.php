@@ -2,11 +2,19 @@
 
 namespace TwentyFourSeven\ClientService;
 
+/**
+ * Class GetVatTypeList
+ *
+ * @package TwentyFourSeven\ClientService
+ */
 class GetVatTypeList
 {
 
-    
-    public function __construct()
+
+	/**
+	 * GetVatTypeList constructor.
+	 */
+	public function __construct()
     {
     
     }

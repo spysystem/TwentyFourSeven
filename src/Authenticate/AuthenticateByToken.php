@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\Authenticate;
 
+/**
+ * Class AuthenticateByToken
+ *
+ * @package TwentyFourSeven\Authenticate
+ */
 class AuthenticateByToken
 {
 

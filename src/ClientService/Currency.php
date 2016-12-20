@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\ClientService;
 
+/**
+ * Class Currency
+ *
+ * @package TwentyFourSeven\ClientService
+ */
 class Currency
 {
 

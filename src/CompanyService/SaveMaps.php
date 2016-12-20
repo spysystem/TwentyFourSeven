@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\CompanyService;
 
+/**
+ * Class SaveMaps
+ *
+ * @package TwentyFourSeven\CompanyService
+ */
 class SaveMaps
 {
 

@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\ClientService;
 
+/**
+ * Class Addresses
+ *
+ * @package TwentyFourSeven\ClientService
+ */
 class Addresses
 {
 
@@ -25,8 +30,11 @@ class Addresses
      */
     protected $Invoice = null;
 
-    
-    public function __construct()
+
+	/**
+	 * Addresses constructor.
+	 */
+	public function __construct()
     {
     
     }

@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\CompanyService;
 
+/**
+ * Class ArrayOfKeyValuePair
+ *
+ * @package TwentyFourSeven\CompanyService
+ */
 class ArrayOfKeyValuePair implements \ArrayAccess, \Iterator, \Countable
 {
 
@@ -10,8 +15,11 @@ class ArrayOfKeyValuePair implements \ArrayAccess, \Iterator, \Countable
      */
     protected $KeyValuePair = null;
 
-    
-    public function __construct()
+
+	/**
+	 * ArrayOfKeyValuePair constructor.
+	 */
+	public function __construct()
     {
     
     }

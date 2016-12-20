@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\AccountService;
 
+/**
+ * Class ArrayOfLinkModel
+ *
+ * @package TwentyFourSeven\AccountService
+ */
 class ArrayOfLinkModel implements \ArrayAccess, \Iterator, \Countable
 {
 
@@ -10,8 +15,11 @@ class ArrayOfLinkModel implements \ArrayAccess, \Iterator, \Countable
      */
     protected $LinkModel = null;
 
-    
-    public function __construct()
+
+	/**
+	 * ArrayOfLinkModel constructor.
+	 */
+	public function __construct()
     {
     
     }

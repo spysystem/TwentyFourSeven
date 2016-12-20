@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\Authenticate;
 
+/**
+ * Class ArrayOfIdentity
+ *
+ * @package TwentyFourSeven\Authenticate
+ */
 class ArrayOfIdentity implements \ArrayAccess, \Iterator, \Countable
 {
 
@@ -10,8 +15,11 @@ class ArrayOfIdentity implements \ArrayAccess, \Iterator, \Countable
      */
     protected $Identity = null;
 
-    
-    public function __construct()
+
+	/**
+	 * ArrayOfIdentity constructor.
+	 */
+	public function __construct()
     {
     
     }

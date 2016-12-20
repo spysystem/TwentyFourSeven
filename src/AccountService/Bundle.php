@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\AccountService;
 
+/**
+ * Class Bundle
+ *
+ * @package TwentyFourSeven\AccountService
+ */
 class Bundle
 {
 

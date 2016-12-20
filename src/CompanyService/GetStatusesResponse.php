@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\CompanyService;
 
+/**
+ * Class GetStatusesResponse
+ *
+ * @package TwentyFourSeven\CompanyService
+ */
 class GetStatusesResponse
 {
 

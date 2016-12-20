@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\Authenticate;
 
+/**
+ * Class GetIdentitiesWithCredential
+ *
+ * @package TwentyFourSeven\Authenticate
+ */
 class GetIdentitiesWithCredential
 {
 

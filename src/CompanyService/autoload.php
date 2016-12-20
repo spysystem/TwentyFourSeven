@@ -1,7 +1,10 @@
 <?php
 
 
- function autoload_ab6311043dace37f62738b3dd9b97ca6($class)
+/**
+ * @param $class
+ */
+function autoload_ab6311043dace37f62738b3dd9b97ca6($class)
 {
     $classes = array(
         'TwentyFourSeven\CompanyService\CompanyService' => __DIR__ . '/CompanyService.php',
@@ -57,7 +60,8 @@
         'TwentyFourSeven\CompanyService\GetStatusesResponse' => __DIR__ . '/GetStatusesResponse.php'
     );
     if (!empty($classes[$class])) {
-        include $classes[$class];
+		/** @noinspection PhpIncludeInspection */
+		include $classes[$class];
     };
 }
 

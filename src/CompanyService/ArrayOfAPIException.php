@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\CompanyService;
 
+/**
+ * Class ArrayOfAPIException
+ *
+ * @package TwentyFourSeven\CompanyService
+ */
 class ArrayOfAPIException implements \ArrayAccess, \Iterator, \Countable
 {
 
@@ -10,8 +15,11 @@ class ArrayOfAPIException implements \ArrayAccess, \Iterator, \Countable
      */
     protected $APIException = null;
 
-    
-    public function __construct()
+
+	/**
+	 * ArrayOfAPIException constructor.
+	 */
+	public function __construct()
     {
     
     }

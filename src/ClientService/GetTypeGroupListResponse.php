@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\ClientService;
 
+/**
+ * Class GetTypeGroupListResponse
+ *
+ * @package TwentyFourSeven\ClientService
+ */
 class GetTypeGroupListResponse
 {
 

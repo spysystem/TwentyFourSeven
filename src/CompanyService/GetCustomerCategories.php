@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\CompanyService;
 
+/**
+ * Class GetCustomerCategories
+ *
+ * @package TwentyFourSeven\CompanyService
+ */
 class GetCustomerCategories
 {
 

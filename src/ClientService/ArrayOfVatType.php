@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\ClientService;
 
+/**
+ * Class ArrayOfVatType
+ *
+ * @package TwentyFourSeven\ClientService
+ */
 class ArrayOfVatType implements \ArrayAccess, \Iterator, \Countable
 {
 
@@ -10,8 +15,11 @@ class ArrayOfVatType implements \ArrayAccess, \Iterator, \Countable
      */
     protected $VatType = null;
 
-    
-    public function __construct()
+
+	/**
+	 * ArrayOfVatType constructor.
+	 */
+	public function __construct()
     {
     
     }

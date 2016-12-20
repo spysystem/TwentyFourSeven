@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\ClientService;
 
+/**
+ * Class FaxNumberType
+ *
+ * @package TwentyFourSeven\ClientService
+ */
 class FaxNumberType
 {
     const __default = 'Unknown';

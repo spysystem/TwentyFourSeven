@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\CompanyService;
 
+/**
+ * Class ArrayOfString
+ *
+ * @package TwentyFourSeven\CompanyService
+ */
 class ArrayOfString implements \ArrayAccess, \Iterator, \Countable
 {
 
@@ -10,8 +15,11 @@ class ArrayOfString implements \ArrayAccess, \Iterator, \Countable
      */
     protected $string = null;
 
-    
-    public function __construct()
+
+	/**
+	 * ArrayOfString constructor.
+	 */
+	public function __construct()
     {
     
     }

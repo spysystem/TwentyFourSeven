@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\AccountService;
 
+/**
+ * Class TaxMappingElements
+ *
+ * @package TwentyFourSeven\AccountService
+ */
 class TaxMappingElements
 {
 

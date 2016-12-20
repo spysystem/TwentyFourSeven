@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\CompanyService;
 
+/**
+ * Class Company
+ *
+ * @package TwentyFourSeven\CompanyService
+ */
 class Company
 {
 
@@ -71,7 +76,7 @@ class Company
     protected $InvoiceLanguage = null;
 
     /**
-     * @var CompanyType $Type
+     * @var CompanyType|string $Type
      */
     protected $Type = null;
 
@@ -225,8 +230,11 @@ class Company
      */
     protected $LedgerSupplierAccount = null;
 
-    
-    public function __construct()
+
+	/**
+	 * Company constructor.
+	 */
+	public function __construct()
     {
     
     }
@@ -474,7 +482,7 @@ class Company
     }
 
     /**
-     * @param CompanyType $Type
+     * @param CompanyType|string $Type
      * @return \TwentyFourSeven\CompanyService\Company
      */
     public function setType($Type)
@@ -520,7 +528,7 @@ class Company
     }
 
     /**
-     * @return \DateTime
+     * @return \DateTime|bool|null
      */
     public function getIncorporationDate()
     {
@@ -550,7 +558,7 @@ class Company
     }
 
     /**
-     * @return \DateTime
+     * @return \DateTime|bool|null
      */
     public function getDateCreated()
     {
@@ -850,7 +858,7 @@ class Company
     }
 
     /**
-     * @return \DateTime
+     * @return \DateTime|bool|null
      */
     public function getDateChanged()
     {

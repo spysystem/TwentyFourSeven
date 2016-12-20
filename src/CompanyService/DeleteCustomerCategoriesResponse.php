@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\CompanyService;
 
+/**
+ * Class DeleteCustomerCategoriesResponse
+ *
+ * @package TwentyFourSeven\CompanyService
+ */
 class DeleteCustomerCategoriesResponse
 {
 

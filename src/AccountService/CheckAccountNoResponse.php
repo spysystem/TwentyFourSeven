@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\AccountService;
 
+/**
+ * Class CheckAccountNoResponse
+ *
+ * @package TwentyFourSeven\AccountService
+ */
 class CheckAccountNoResponse
 {
 

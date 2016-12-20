@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\ClientService;
 
+/**
+ * Class FaxNumber
+ *
+ * @package TwentyFourSeven\ClientService
+ */
 class FaxNumber
 {
 

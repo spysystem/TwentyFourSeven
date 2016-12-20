@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\CompanyService;
 
+/**
+ * Class EmailAddress
+ *
+ * @package TwentyFourSeven\CompanyService
+ */
 class EmailAddress
 {
 
@@ -20,8 +25,11 @@ class EmailAddress
      */
     protected $Value = null;
 
-    
-    public function __construct()
+
+	/**
+	 * EmailAddress constructor.
+	 */
+	public function __construct()
     {
     
     }

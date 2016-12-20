@@ -2,11 +2,19 @@
 
 namespace TwentyFourSeven\CompanyService;
 
+/**
+ * Class GetCategories
+ *
+ * @package TwentyFourSeven\CompanyService
+ */
 class GetCategories
 {
 
-    
-    public function __construct()
+
+	/**
+	 * GetCategories constructor.
+	 */
+	public function __construct()
     {
     
     }

@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\CompanyService;
 
+/**
+ * Class APIException
+ *
+ * @package TwentyFourSeven\CompanyService
+ */
 class APIException
 {
 
@@ -20,8 +25,11 @@ class APIException
      */
     protected $StackTrace = null;
 
-    
-    public function __construct()
+
+	/**
+	 * APIException constructor.
+	 */
+	public function __construct()
     {
     
     }

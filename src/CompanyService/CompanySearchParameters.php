@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\CompanyService;
 
+/**
+ * Class CompanySearchParameters
+ *
+ * @package TwentyFourSeven\CompanyService
+ */
 class CompanySearchParameters
 {
 
@@ -20,8 +25,11 @@ class CompanySearchParameters
      */
     protected $ChangedAfter = null;
 
-    
-    public function __construct()
+
+	/**
+	 * CompanySearchParameters constructor.
+	 */
+	public function __construct()
     {
     
     }
@@ -63,7 +71,7 @@ class CompanySearchParameters
     }
 
     /**
-     * @return \DateTime
+     * @return \DateTime|bool|null
      */
     public function getChangedAfter()
     {

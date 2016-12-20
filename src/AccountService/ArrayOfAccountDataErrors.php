@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\AccountService;
 
+/**
+ * Class ArrayOfAccountDataErrors
+ *
+ * @package TwentyFourSeven\AccountService
+ */
 class ArrayOfAccountDataErrors implements \ArrayAccess, \Iterator, \Countable
 {
 
@@ -10,8 +15,11 @@ class ArrayOfAccountDataErrors implements \ArrayAccess, \Iterator, \Countable
      */
     protected $AccountDataErrors = null;
 
-    
-    public function __construct()
+
+	/**
+	 * ArrayOfAccountDataErrors constructor.
+	 */
+	public function __construct()
     {
     
     }

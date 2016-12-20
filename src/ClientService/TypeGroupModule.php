@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\ClientService;
 
+/**
+ * Class TypeGroupModule
+ *
+ * @package TwentyFourSeven\ClientService
+ */
 class TypeGroupModule
 {
     const __default = 'All';

@@ -1,7 +1,10 @@
 <?php
 
 
- function autoload_8899a1cd945fe654c5b74fbaa85e6a48($class)
+/**
+ * @param $class
+ */
+function autoload_8899a1cd945fe654c5b74fbaa85e6a48($class)
 {
     $classes = array(
         'TwentyFourSeven\Authenticate\Authenticate' => __DIR__ . '/Authenticate.php',
@@ -34,7 +37,8 @@
         'TwentyFourSeven\Authenticate\GetIdentitiesWithCredentialByServiceResponse' => __DIR__ . '/GetIdentitiesWithCredentialByServiceResponse.php'
     );
     if (!empty($classes[$class])) {
-        include $classes[$class];
+		/** @noinspection PhpIncludeInspection */
+		include $classes[$class];
     };
 }
 

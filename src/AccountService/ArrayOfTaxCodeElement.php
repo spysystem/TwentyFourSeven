@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\AccountService;
 
+/**
+ * Class ArrayOfTaxCodeElement
+ *
+ * @package TwentyFourSeven\AccountService
+ */
 class ArrayOfTaxCodeElement implements \ArrayAccess, \Iterator, \Countable
 {
 
@@ -10,8 +15,11 @@ class ArrayOfTaxCodeElement implements \ArrayAccess, \Iterator, \Countable
      */
     protected $TaxCodeElement = null;
 
-    
-    public function __construct()
+
+	/**
+	 * ArrayOfTaxCodeElement constructor.
+	 */
+	public function __construct()
     {
     
     }

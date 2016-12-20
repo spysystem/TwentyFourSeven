@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\CompanyService;
 
+/**
+ * Class GetCustomerCategoryTreeResponse
+ *
+ * @package TwentyFourSeven\CompanyService
+ */
 class GetCustomerCategoryTreeResponse
 {
 

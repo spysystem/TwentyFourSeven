@@ -2,6 +2,11 @@
 
 namespace TwentyFourSeven\ClientService;
 
+/**
+ * Class AccountingGroup
+ *
+ * @package TwentyFourSeven\ClientService
+ */
 class AccountingGroup
 {
 

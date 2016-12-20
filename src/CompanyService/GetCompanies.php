@@ -2,6 +2,7 @@
 
 namespace TwentyFourSeven\CompanyService;
 
+use DateTime;
 use ReflectionClass;
 
 /**
@@ -22,13 +23,53 @@ class GetCompanies
     protected $returnProperties = null;
 
 	/**
+	 * @param string $strFromDate
+	 *
+	 * @return static
+	 */
+	public static function CreateForIdList(string $strFromDate)
+	{
+		$oSearchParameters	= new CompanySearchParameters();
+		$oSearchParameters->setChangedAfter(DateTime::createFromFormat('Y-m-d', $strFromDate));
+
+		$arrReturnParameters	= null;
+		$arrReturnParameters = [
+			'Id'
+		];
+
+		return new static($oSearchParameters, $arrReturnParameters);
+	}
+
+	/**
+	 * @param string $strFromDate
+	 *
+	 * @return static
+	 */
+	public static function CreateForSearch(string $strFromDate)
+	{
+		$oSearchParameters	= new CompanySearchParameters();
+		$oSearchParameters->setChangedAfter(DateTime::createFromFormat('Y-m-d', $strFromDate));
+
+		$arrReturnParameters	= null;
+		$arrReturnParameters = [
+			'Id',
+			'Name',
+			'OrganizationNumber',
+			'Type'
+		];
+
+		return new static($oSearchParameters, $arrReturnParameters);
+	}
+
+	/**
 	 * @param CompanySearchParameters $oSearchParameters
-	 * @param ArrayOfString           $arrReturnParameters
+	 * @param ArrayOfString|string[]  $arrReturnParameters
 	 *
 	 * note: Can't add type to $arrReturnParameters, since it can receive both an ArrayOfString, a normal array and null
 	 */
 	public function __construct(CompanySearchParameters $oSearchParameters, $arrReturnParameters = null)
 	{
+		# If no return parameter is defined, retrieve all them
 		if ($arrReturnParameters === null)
 		{
 			$arrReturnParameters = [];

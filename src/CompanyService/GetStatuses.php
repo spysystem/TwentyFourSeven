@@ -2,11 +2,19 @@
 
 namespace TwentyFourSeven\CompanyService;
 
+/**
+ * Class GetStatuses
+ *
+ * @package TwentyFourSeven\CompanyService
+ */
 class GetStatuses
 {
 
-    
-    public function __construct()
+
+	/**
+	 * GetStatuses constructor.
+	 */
+	public function __construct()
     {
     
     }
