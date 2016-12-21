@@ -32,7 +32,7 @@ class ArrayOfCompany implements \ArrayAccess, \Iterator, \Countable
 		$arrCompanies	= [];
 		foreach ($this as $oCompany)
 		{
-			$arrCompanies[$oCompany->getType().'::'.$oCompany->getName()]	= $oCompany;
+			$arrCompanies[$oCompany->getType().'::'.$oCompany->getNickName()]	= $oCompany;
 		}
 
 		return $arrCompanies;

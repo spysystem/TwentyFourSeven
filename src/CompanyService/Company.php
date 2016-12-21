@@ -968,7 +968,7 @@ class Company
     }
 
     /**
-     * @param CurrencyType $CurrencyId
+     * @param string $CurrencyId
      * @return \TwentyFourSeven\CompanyService\Company
      */
     public function setCurrencyId($CurrencyId)
