@@ -118,7 +118,7 @@ class Entry
      * @param int $Period
      * @param int $StampNo
      */
-    public function __construct($CustomerId, $AccountNo, \DateTime $Date, \DateTime $DueDate, $Amount, $CurrencyRate, $CurrencyUnit, $Department, $Project, $Period, $StampNo)
+    public function __construct($CustomerId, $AccountNo, \DateTime $Date, \DateTime $DueDate, $Amount, $CurrencyRate, $CurrencyUnit = 1, $Department = 0, $Project = 0, $Period = 0, $StampNo = 0)
     {
       $this->CustomerId = $CustomerId;
       $this->AccountNo = $AccountNo;

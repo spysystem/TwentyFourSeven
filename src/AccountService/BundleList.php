@@ -9,6 +9,8 @@ namespace TwentyFourSeven\AccountService;
  */
 class BundleList
 {
+	const SaveOption_PostDirectly	= 0;
+	const SaveOption_SaveAsBundle	= 1;
 
     /**
      * @var string $TaxMappingGroup
@@ -59,10 +61,15 @@ class BundleList
      * @param string $TaxMappingGroup
      * @param int $SaveOption
      * @param int $DefaultCustomerId
-     * @param LogType $sysLog
+     * @param string $sysLog
      * @param string $sysAsyncLogId
      */
-    public function __construct($TaxMappingGroup, $SaveOption, $DefaultCustomerId, $sysLog, $sysAsyncLogId)
+    public function __construct(
+    	$TaxMappingGroup = '00000000-0000-0000-0000-000000000000',
+		$SaveOption = self::SaveOption_SaveAsBundle,
+		$DefaultCustomerId = 0,
+		$sysLog	= LogType::none,
+		$sysAsyncLogId = '00000000-0000-0000-0000-000000000000')
     {
       $this->TaxMappingGroup = $TaxMappingGroup;
       $this->SaveOption = $SaveOption;
