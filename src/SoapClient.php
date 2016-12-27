@@ -11,10 +11,11 @@ class SoapClient extends \SoapClient
 	const	WSDLUrl			= '';
 	const	API_CookieName	= 'ASP.NET_SessionId';
 	const   API_SoapOptions	= [
-				'trace'        => true,
-				'exceptions'   => true,
-				'soap_version' => SOAP_1_2,
-				'encoding'     => 'UTF-8'
+				'trace'              => true,
+				'exceptions'         => true,
+				'soap_version'       => SOAP_1_2,
+				'encoding'           => 'UTF-8',
+				'connection_timeout' => '600'
 			];
 
 	/**
