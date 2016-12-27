@@ -27,24 +27,6 @@ class GetCompanies
 	 *
 	 * @return static
 	 */
-	public static function CreateForIdList(string $strFromDate)
-	{
-		$oSearchParameters	= new CompanySearchParameters();
-		$oSearchParameters->setChangedAfter(DateTime::createFromFormat('Y-m-d', $strFromDate));
-
-		$arrReturnParameters	= null;
-		$arrReturnParameters = [
-			'Id'
-		];
-
-		return new static($oSearchParameters, $arrReturnParameters);
-	}
-
-	/**
-	 * @param string $strFromDate
-	 *
-	 * @return static
-	 */
 	public static function CreateForSearch(string $strFromDate)
 	{
 		$oSearchParameters	= new CompanySearchParameters();
@@ -55,7 +37,8 @@ class GetCompanies
 			'Id',
 			'Name',
 			'OrganizationNumber',
-			'Type'
+			'Type',
+			'NickName'
 		];
 
 		return new static($oSearchParameters, $arrReturnParameters);
