@@ -90,7 +90,7 @@ class Authenticate extends SoapClient
 
 		$oAuthenticate		= new self(static::API_SoapOptions, static::WSDLUrl);
 
-		if (static::$arrSessionID[$strApplicationID.$strIdentityID] === '' || !$oAuthenticate->isValidSession(static::$arrSessionID[$strApplicationID.$strIdentityID]))
+		if ( (static::$arrSessionID[$strApplicationID.$strIdentityID] ?? '') === '' || !$oAuthenticate->isValidSession(static::$arrSessionID[$strApplicationID.$strIdentityID]))
 		{
 			$strSessionID		= $oAuthenticate->Login(new Login(new Credential($strApplicationID, $strUserName, $strPassword)))->getLoginResult();
 			if (!$oAuthenticate->isValidSession($strSessionID))
