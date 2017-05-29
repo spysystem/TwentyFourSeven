@@ -74,6 +74,7 @@ class Authenticate extends SoapClient
 
 	/**
 	 * @param string $strApplicationID
+	 * @param string $strIdentityID
 	 * @param string $strUserName
 	 * @param string $strPassword
 	 * @param string $strSessionID
