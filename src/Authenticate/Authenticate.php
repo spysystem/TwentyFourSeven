@@ -16,8 +16,8 @@ class Authenticate extends SoapClient
 {
 	const	WSDLUrl			= 'https://api.24sevenoffice.com/authenticate/v001/authenticate.asmx?wsdl';
 
-	/** @var string */
-	private static	$strSessionID	= '';
+	/** @var string[] */
+	private static $arrSessionID = [];
 
     /**
      * @var array $arrClassMap The defined classes
@@ -81,16 +81,16 @@ class Authenticate extends SoapClient
 	 * @return string
 	 * @throws Exception
 	 */
-	public static function GetSessionID(string $strApplicationID, string $strUserName, string $strPassword, string $strSessionID = '') : string
+	public static function GetSessionID(string $strApplicationID, string $strIdentityID, string $strUserName, string $strPassword, string $strSessionID = '') : string
 	{
 		if ($strSessionID !== '')
 		{
-			static::$strSessionID	= $strSessionID;
+			static::$arrSessionID[$strApplicationID.$strIdentityID]	= $strSessionID;
 		}
 
 		$oAuthenticate		= new self(static::API_SoapOptions, static::WSDLUrl);
 
-		if (static::$strSessionID === '' || !$oAuthenticate->isValidSession(static::$strSessionID))
+		if (static::$arrSessionID[$strApplicationID.$strIdentityID] === '' || !$oAuthenticate->isValidSession(static::$arrSessionID[$strApplicationID.$strIdentityID]))
 		{
 			$strSessionID		= $oAuthenticate->Login(new Login(new Credential($strApplicationID, $strUserName, $strPassword)))->getLoginResult();
 			if (!$oAuthenticate->isValidSession($strSessionID))
@@ -98,10 +98,10 @@ class Authenticate extends SoapClient
 				throw new Exception('Invalid Credentials');
 			}
 
-			static::$strSessionID		= $strSessionID;
+			static::$arrSessionID[$strApplicationID.$strIdentityID]	= $strSessionID;
 		}
 
-		return static::$strSessionID;
+		return static::$arrSessionID[$strApplicationID.$strIdentityID];
 	}
 
     /**
