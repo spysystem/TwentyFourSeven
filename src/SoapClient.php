@@ -1,6 +1,8 @@
 <?php
 namespace TwentyFourSeven;
 
+use Exception;
+
 /**
  * Class SoapClient
  *
@@ -8,6 +10,8 @@ namespace TwentyFourSeven;
  */
 class SoapClient extends \SoapClient
 {
+    private static int $iCounter = 0;
+
 	const	WSDLUrl			= '';
 	const	API_CookieName	= 'ASP.NET_SessionId';
 	const   API_SoapOptions	= [
@@ -41,13 +45,13 @@ class SoapClient extends \SoapClient
 	 * @param array  $arrOptions A array of config values
 	 * @param string $strWsdl    The wsdl file to use
 	 *
-	 * @throws \Exception
+	 * @throws Exception
 	 */
 	public function __construct(array $arrOptions = [], string $strWsdl)
 	{
 		if ($strWsdl === '')
 		{
-			throw new \Exception('Missing WSDL!');
+			throw new Exception('Missing WSDL!');
 		}
 		foreach (static::$arrClassMap as $strKey => $mValue)
 		{
@@ -64,4 +68,27 @@ class SoapClient extends \SoapClient
 
 		parent::__construct($strWsdl, $arrOptions);
 	}
+
+    /**
+     * @param string $name
+     * @param array  $args
+     * @param null   $options
+     * @param null   $inputHeaders
+     * @param null   $outputHeaders
+     *
+     * @return mixed|void
+     */
+	public function __soapCall($name, $args, $options = null, $inputHeaders = null, &$outputHeaders = null)
+    {
+        self::$iCounter++;
+        return parent::__soapCall($name, $args, $options, $inputHeaders, $outputHeaders);
+    }
+
+    /**
+     * @return int
+     */
+    public function getNumberOfCalls(): int
+    {
+        return self::$iCounter;
+    }
 }
